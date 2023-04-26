@@ -27,15 +27,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    window.cpp
+    okno.cpp
 
 HEADERS += \
         mainwindow.h \
-    window.h
+    okno.h
 
 FORMS += \
         mainwindow.ui \
-    window.ui
+    okno.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

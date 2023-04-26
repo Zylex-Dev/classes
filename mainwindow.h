@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include "window.h"
+#include "okno.h"
 
 namespace Ui {
 class MainWindow;
@@ -15,10 +15,14 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
+
 private slots:
     void on_pushButton_Draw_clicked();
 
     void on_comboBox_DrawChoice_currentIndexChanged(int index);
+
+    void IndexValue(int Index);
 
 private:
     Ui::MainWindow *ui;
@@ -29,6 +33,7 @@ private:
     {
         QWidget::showMaximized();
     }
+
 };
 
 #endif // MAINWINDOW_H

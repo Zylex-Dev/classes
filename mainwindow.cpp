@@ -22,11 +22,16 @@ MainWindow::~MainWindow() // destructor
 void MainWindow::on_pushButton_Draw_clicked() // pushbutton draw
 {
 
-    //creating a dialog window
-    window * my_w = new window (this);
+    //creating a window
+    okno * my_w = new okno (this);
     my_w->setWindowModality(Qt::WindowModal);
+
+
     my_w->show();
- //   delete my_w;
+
+
+
+
 
 
 }
@@ -35,4 +40,3 @@ void MainWindow::on_comboBox_DrawChoice_currentIndexChanged(int index)
 {
     DrawChoiceIndex = index;
 }
-

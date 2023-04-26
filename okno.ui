@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>window</class>
- <widget class="QMainWindow" name="window">
+ <class>okno</class>
+ <widget class="QMainWindow" name="okno">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>831</width>
+    <width>800</width>
     <height>682</height>
    </rect>
   </property>
@@ -22,14 +22,14 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>11</y>
-      <width>809</width>
+      <x>9</x>
+      <y>9</y>
+      <width>782</width>
       <height>511</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Pixel">
      <widget class="QLineEdit" name="lineEdit_PixelCoordinatesX">
@@ -176,7 +176,7 @@
    <widget class="QPushButton" name="pushButton_OK">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>380</x>
       <y>540</y>
       <width>401</width>
       <height>45</height>
@@ -192,8 +192,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>831</width>
-     <height>26</height>
+     <width>800</width>
+     <height>38</height>
     </rect>
    </property>
   </widget>
