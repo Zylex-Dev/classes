@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent) : // constructor
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -8,6 +9,9 @@ MainWindow::MainWindow(QWidget *parent) : // constructor
     ui->setupUi(this);
     // initialize ui setting
     setting();
+    ui->comboBox_DrawChoice->setCurrentIndex(0);
+
+
 }
 
 MainWindow::~MainWindow() // destructor
@@ -17,7 +21,18 @@ MainWindow::~MainWindow() // destructor
 
 void MainWindow::on_pushButton_Draw_clicked() // pushbutton draw
 {
-    Dialog * my_d = new Dialog(this);
-    my_d->exec();
-    delete my_d;
+
+    //creating a dialog window
+    window * my_w = new window (this);
+    my_w->setWindowModality(Qt::WindowModal);
+    my_w->show();
+ //   delete my_w;
+
+
 }
+
+void MainWindow::on_comboBox_DrawChoice_currentIndexChanged(int index)
+{
+    DrawChoiceIndex = index;
+}
+

@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include "dialog.h"
+#include "window.h"
 
 namespace Ui {
 class MainWindow;
@@ -18,8 +18,12 @@ public:
 private slots:
     void on_pushButton_Draw_clicked();
 
+    void on_comboBox_DrawChoice_currentIndexChanged(int index);
+
 private:
     Ui::MainWindow *ui;
+
+    int DrawChoiceIndex;
 
     void setting () // different ui settings
     {
