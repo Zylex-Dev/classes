@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) : // constructor
     ui->setupUi(this);
     // initialize ui setting
     setting();
-    ui->comboBox_DrawChoice->setCurrentIndex(0);
+
 
 
 }
@@ -25,18 +25,15 @@ void MainWindow::on_pushButton_Draw_clicked() // pushbutton draw
     //creating a window
     okno * my_w = new okno (this);
     my_w->setWindowModality(Qt::WindowModal);
-
-
     my_w->show();
-
-
 
 
 
 
 }
 
+
 void MainWindow::on_comboBox_DrawChoice_currentIndexChanged(int index)
 {
-    DrawChoiceIndex = index;
+    emit comboBoxIndexChanged(index);
 }

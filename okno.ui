@@ -167,8 +167,58 @@
        <string>vssv</string>
       </property>
      </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>180</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+     </widget>
+     <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>210</y>
+        <width>156</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="commandLinkButton">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>70</y>
+        <width>172</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CommandLinkButton</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="Circle"/>
+    <widget class="QWidget" name="Circle">
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>140</y>
+        <width>312</width>
+        <height>183</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="Ellipse"/>
     <widget class="QWidget" name="Arc"/>
     <widget class="QWidget" name="Polyline"/>
@@ -193,7 +243,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>38</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

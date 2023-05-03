@@ -12,7 +12,7 @@ class okno : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit okno(QWidget *parent = nullptr);
+    explicit okno(QMainWindow *mainWindow, QWidget *parent = nullptr);
     ~okno();
 
 private slots:
@@ -20,8 +20,12 @@ private slots:
 
     void on_pushButton_PixelColor_clicked();
 
+public slots:
+    void comboBoxIndexChangedSlot(int index);
+
 private:
     Ui::okno *ui;
+    QMainWindow *mMainwindow;
 };
 
 #endif // OKNO_H
