@@ -27,13 +27,4 @@ void MainWindow::on_pushButton_Draw_clicked() // pushbutton draw
     my_w->setWindowModality(Qt::WindowModal);
     my_w->show();
 
-
-
-
-}
-
-
-void MainWindow::on_comboBox_DrawChoice_currentIndexChanged(int index)
-{
-    emit comboBoxIndexChanged(index);
 }

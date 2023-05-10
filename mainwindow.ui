@@ -25,83 +25,20 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_MenuChoice">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>491</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Выберите, что хотите нарисовать:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_DrawChoice">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>241</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Пиксель</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Линия</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Прямоугольник</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Круг</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Эллипс</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Дуга</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Ломанная</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Треугольник</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QPushButton" name="pushButton_Draw">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>0</y>
+      <x>30</x>
+      <y>10</y>
       <width>341</width>
-      <height>161</height>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
      <string>Нарисовать</string>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="widget_paint" name="widget" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -139,6 +76,14 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>widget_paint</class>
+   <extends>QWidget</extends>
+   <header location="global">widget_paint.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

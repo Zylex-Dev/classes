@@ -27,11 +27,21 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    okno.cpp
+    okno.cpp \
+    widget_paint.cpp \
+    dot.cpp \
+    pixel.cpp \
+    color.cpp \
+    pen.cpp
 
 HEADERS += \
         mainwindow.h \
-    okno.h
+    okno.h \
+    widget_paint.h \
+    dot.h \
+    pixel.h \
+    color.h \
+    pen.h
 
 FORMS += \
         mainwindow.ui \

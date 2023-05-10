@@ -22,8 +22,8 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
+      <x>10</x>
+      <y>60</y>
       <width>782</width>
       <height>511</height>
      </rect>
@@ -226,8 +226,8 @@
    <widget class="QPushButton" name="pushButton_OK">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>540</y>
+      <x>390</x>
+      <y>580</y>
       <width>401</width>
       <height>45</height>
      </rect>
@@ -235,6 +235,56 @@
     <property name="text">
      <string>OK</string>
     </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_DrawChoice">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Пиксель</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Линия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Прямоугольник</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Круг</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Эллипс</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Дуга</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ломанная</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Треугольник</string>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
